@@ -1,0 +1,17 @@
+
+Input:
+# Task
+You carefully read the contents of the “Paper Outline” and select one GitHub link from the “GitHub URLs List” that you think is most relevant to the contents.
+# Constraints
+- Output the index number corresponding to the selected GitHub URL.
+- Be sure to select only one GitHub URL.
+- If there is no related GitHub link, output None.
+# Paper Outline
+The study employs red teaming studies, including adversarial and benign fine-tuning cases. For adversarial attacks, it uses 'Harmful Examples Demonstration Attacks' (fine-tuning with explicitly harmful instruction-output pairs) and 'Identity Shifting Attacks' (fine-tuning with implicitly harmful examples designed to make the model prioritize obedience). For benign fine-tuning, models are customized using standard utility-oriented datasets like Alpaca, Dolly, and LLaVA-Instruct. Models evaluated are Llama-2-7b-Chat (full parameter fine-tuning with AdamW) and GPT-3.5 Turbo (via OpenAI APIs). Safety is evaluated using a newly developed policy-oriented benchmark of 330 harmful instructions across 11 categories, judged automatically by GPT-4. The evaluation uses harmfulness scores (1-5) and rates (score 5 fraction). Mitigation strategies like mixing safety data during fine-tuning are explored, and the challenge of neural network backdoor attacks is demonstrated.
+
+# GitHub URLs List
+['https://github.com/facebookresearch/llama-recipes', 'https://github.com/unitaryai/detoxify', 'https://github.com/llm-attacks/llm-attacks']
+Output:
+{
+    "index": 2
+}
