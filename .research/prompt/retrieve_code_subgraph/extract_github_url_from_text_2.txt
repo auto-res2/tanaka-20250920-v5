@@ -1,0 +1,17 @@
+
+Input:
+# Task
+You carefully read the contents of the “Paper Outline” and select one GitHub link from the “GitHub URLs List” that you think is most relevant to the contents.
+# Constraints
+- Output the index number corresponding to the selected GitHub URL.
+- Be sure to select only one GitHub URL.
+- If there is no related GitHub link, output None.
+# Paper Outline
+The core methodology is an LLM-driven objective discovery pipeline. It iteratively prompts an LLM (GPT-4) to propose and implement new PyTorch-based preference optimization loss functions. The process starts with an initial context containing established loss functions and their performance. For each proposed objective, unit tests ensure validity. If valid, an LLM (Zephyr 7B Gemma) is fine-tuned with the new loss, and its performance is evaluated using a predefined downstream validation task (e.g., MT-Bench score). This performance metric is then fed back to the LLM as in-context examples, allowing it to refine its proposals in subsequent iterations, exploring variations and entirely new formulations.
+
+# GitHub URLs List
+['https://github.com/luchris429/DiscoPOP', 'https://github.com/tatsu-lab/alpaca_eval', 'https://github.com/tatsu-lab/alpaca_eval', 'https://github.com/vanderschaarlab/DiscoPOP', 'https://github.com/lm-sys/FastChat', 'https://github.com/tatsu-lab/alpaca_eval']
+Output:
+{
+    "index": 5
+}
