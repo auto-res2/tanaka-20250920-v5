@@ -3,5 +3,19 @@
   "queries": [
     "fine-tuning LLM custom loss",
     "adaptive loss function LLM"
+  ],
+  "research_study_list": [
+    {
+      "title": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!"
+    },
+    {
+      "title": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!"
+    },
+    {
+      "title": "Discovering Preference Optimization Algorithms with and for Large Language Models"
+    },
+    {
+      "title": "Language Generation with Strictly Proper Scoring Rules"
+    }
   ]
 }
