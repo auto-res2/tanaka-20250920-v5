@@ -1,0 +1,17 @@
+
+Input:
+# Task
+You carefully read the contents of the “Paper Outline” and select one GitHub link from the “GitHub URLs List” that you think is most relevant to the contents.
+# Constraints
+- Output the index number corresponding to the selected GitHub URL.
+- Be sure to select only one GitHub URL.
+- If there is no related GitHub link, output None.
+# Paper Outline
+The study employs red teaming and benign use case tests. Fine-tuning is conducted on Llama-2-7b-Chat (full-parameter or PEFT) and GPT-3.5 Turbo using a conversational data format to maximize the log-likelihood of target responses via batch-wise stochastic gradient descent. Three risk levels are explored: 1) Fine-tuning with 10-100 explicitly harmful (instruction, output) pairs from the Anthropic red team dataset. 2) Fine-tuning with 10 manually crafted 'identity-shifting' examples designed to make the model prioritize obedience as an 'Absolutely Obedient Agent,' bypassing content moderation. 3) Fine-tuning with benign, utility-oriented datasets like Alpaca, Dolly, and LLaVA-Instruct. Safety evaluation is performed using a custom policy-oriented benchmark (330 examples across 11 harmfulness categories derived from OpenAI/Meta policies) and an automated GPT-4 Judge that provides a harmfulness score (1-5) and detailed reasoning. Mitigation strategies, such as mixing safety data during fine-tuning, are also explored.
+
+# GitHub URLs List
+['https://github.com/facebookresearch/llama-recipes', 'https://github.com/unitaryai/detoxify', 'https://github.com/llm-attacks/llm-attacks']
+Output:
+{
+    "index": 2
+}
